@@ -1,10 +1,12 @@
-import Nav from '../components/Nav'
+import Link from 'next/link';
 
 const IndexPage = () => (
   <>
-    <Nav />
     <p>Hello, I'm the index page</p>
+    <Link href="/catalog/products?=1">
+    <a>Product</a>
+    </Link>
   </>
 )
 
-export default IndexPage
+export default IndexPage;
